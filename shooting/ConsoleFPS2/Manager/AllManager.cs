@@ -10,12 +10,12 @@ using System.Collections.Generic;
 class AllManager
 {
 	public int m_nScore = 0;				//스코어
-	public int BmLife = 100;				//보스 라이프
+	public int BmLife = 150;				//보스 라이프
 
 	private float m_fPlayerX;
 	private float m_fPlayerY;
 
-	public float m_fBpPosX;				//bullet가 플레이어의 위치에 맞게 발사를 만들기 위한 변수
+	public float m_fBpPosX;			     	//bullet가 플레이어의 위치에 맞게 발사를 만들기 위한 변수
 	public float m_fBpPosY;
 
 	private const int nMAKE_DEFAULT_COUNT = 30;

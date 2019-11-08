@@ -12,11 +12,13 @@ enum eKey
 {
     Up = Key.Up,
     Down = Key.Down,
+
     Right = Key.Right,
     Left = Key.Left,
+
     Space = Key.Space,
 	
-    Max = 5,
+    Max = 1,
 }
 
 [Flags]

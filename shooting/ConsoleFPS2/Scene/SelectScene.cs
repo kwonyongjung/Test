@@ -115,7 +115,6 @@ class SelectScene : Scene
         }
 		Console.SetCursorPosition(0, 0);
 		Console.WriteLine("이동 : 방향키");
-		Console.WriteLine("※ 한번 누르고 다시 한번 꾹 눌러야 이동가능\n");
 		Console.WriteLine("공격 : Spaceber");
 		Console.SetCursorPosition(55, 30);
         Console.WriteLine("Start");

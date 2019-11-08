@@ -29,11 +29,7 @@ class SceneManager
 		ChangeScene(eScene.Main);
 		AllManager.CraeteInstance((int)Make.make);
 
-		arValue[0] = eKey.Left;
-		arValue[1] = eKey.Down;
-		arValue[2] = eKey.Right;
-		arValue[3] = eKey.Up;
-		arValue[4] = eKey.Space;
+		arValue[0] = eKey.Space;
 
 		for (int i = 0; i < m_arStates.Length; ++i)
 		{
