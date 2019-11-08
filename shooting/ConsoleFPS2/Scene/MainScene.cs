@@ -28,7 +28,6 @@ class MainScene : Scene
         AllManager.Get().MonsterUpdate(a_fDelta);
         AllManager.Get().BossBulletUpdate(a_fDelta);
 		AllManager.Get().PUpdate();
-
 		if (eKey.Space.IsKeyDown() == true)
 		{
 			if (AllManager.Get().m_fBpPosX < 0)
@@ -41,25 +40,26 @@ class MainScene : Scene
 				20f, 'o');
 		}
 
-		if (eKey.Left.IsKeyDown() == true)
+		if (true == Console.KeyAvailable)                // 예외처리
 		{
-			n_nPosX--;
+			switch (Console.ReadKey().Key)
+			{
+				case ConsoleKey.LeftArrow:
+					n_nPosX--;
+					break;
+				case ConsoleKey.RightArrow:
+					n_nPosX++;
+					break;
+				case ConsoleKey.DownArrow:
+					n_nPosY++;
+					break;
+				case ConsoleKey.UpArrow:
+					n_nPosY--;
+					break;
+				default:
+					break;
+			}
 		}
-		else if (eKey.Right.IsKeyDown() == true)
-		{
-			n_nPosX++;
-		}
-
-		if (eKey.Up.IsKeyDown() == true)
-		{
-			n_nPosY--;
-		}
-
-		else if (eKey.Down.IsKeyDown() == true)
-		{
-			n_nPosY++;
-		}
-
 		//생성 속도를 0.MTimelimit마다 생성하게 함
 		n_fMTimelimit = (int)Time.Mlimit * (float)0.1;
 
