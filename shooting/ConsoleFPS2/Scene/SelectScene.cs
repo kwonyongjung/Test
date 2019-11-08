@@ -32,7 +32,7 @@ class SelectScene : Scene
         }
     }
 
-    public void Update(eKey p_Temp)
+	override public void Update(eKey p_Temp)
     {
         Console.Clear();
 
@@ -65,7 +65,7 @@ class SelectScene : Scene
         }
     }
 
-    public override void Render()
+	override public void Render()
     {
         int[,] TileArr = new int[17, 17]
         {
