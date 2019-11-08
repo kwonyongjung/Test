@@ -8,6 +8,7 @@ class PlayerScene : Scene
 {
 	static public int m_nSelectPlayer;		//0,1에 대한 캐릭 선택
 	private int m_nChoicePosX = 45;			//선택 화살표의 X값
+
 	public string[] m_sRender1 = new string[4]
 	{
 	  "     ■     ",
@@ -73,13 +74,14 @@ class PlayerScene : Scene
 				{
 					m_nSelectPlayer = 1;
 				}
+
 				Console.Clear();
 				GameFPS gameFPS = new GameFPS();
 				GameFPS.Open();
 				break;
-		}
-				
+		}	
 	}
+
 	public override void Render()
 	{
 		for (int i = 0; i < m_sRender1.Length; i++)

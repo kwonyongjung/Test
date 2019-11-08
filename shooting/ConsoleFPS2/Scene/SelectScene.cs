@@ -3,6 +3,7 @@
 class SelectScene : Scene
 {
     private int m_nChoicePosY = 30; //선택 화살표의 y값
+
     public void Run()
     {
         while (true)

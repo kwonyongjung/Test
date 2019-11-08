@@ -2,18 +2,18 @@
 
 class Player
 {
-    private string[] m_sRender1 = new string[6]
-    {
-      "            ",
-      "     ■     ",
-      " ◀■■■▶ ",
-      "     ■    ",
-      "   ■■■   ",
-      "            "
+	private string[] m_sRender1 = new string[6]
+	{
+	  "            ",
+	  "     ■     ",
+	  " ◀■■■▶ ",
+	  "     ■    ",
+	  "   ■■■   ",
+	  "            "
 	};
 	public string[] m_sRender2 = new string[6]
 	{
-		 "            ",
+	  "            ",
 	  "     ▲     ",
 	  " §■○■§ ",
 	  "     ■    ",
@@ -22,14 +22,14 @@ class Player
 	};
 	public Vec2 m_vPos;
 
-    public Player(int x, int y)
-    {
-        m_vPos.x = x;
-        m_vPos.y = y;
-    }
+	public Player(int x, int y)
+	{
+		m_vPos.x = x;
+		m_vPos.y = y;
+	}
 
-    public void Render()
-    {		
+	public void Render()
+	{
 		if (Util.ConsoleBoundaryCheck(m_vPos) == false)
 		{
 			return;
@@ -51,6 +51,6 @@ class Player
 				Console.WriteLine(m_sRender2[i]);
 			}
 		}
-    }	
+	}
 }
 
