@@ -1,6 +1,6 @@
 ﻿using System;
 
-class BossBullet:All
+class BossBullet:AllObject
 {
 	private char m_cBbRender; 
 

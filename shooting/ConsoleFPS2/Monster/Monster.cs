@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Monster:All
+class Monster:AllObject
 {
     private string[] m_sMRender1 = new string[2]
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-class BossMonster:All
+class BossMonster:AllObject
 {
 	private string[] m_sBmRender = new string[10]
     {

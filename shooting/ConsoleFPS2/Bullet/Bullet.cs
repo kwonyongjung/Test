@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Bullet:All
+class Bullet:AllObject
 {
 	private char m_cBRender;
 

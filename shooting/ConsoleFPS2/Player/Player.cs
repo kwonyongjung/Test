@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Player:All
+class Player:AllObject
 {
 	private string[] m_sRender1 = new string[6]
 	{
