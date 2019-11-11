@@ -2,7 +2,7 @@
 
 class MainScene : Scene
 {
-	private int m_nColor = 0;               //보스몬스터 총알과 플레이어 총알의 색 
+	private int m_nColor;               //보스몬스터 총알과 플레이어 총알의 색 
 
 	private int m_nMake = 1;                //플레이어 생성 제한 
 
@@ -79,7 +79,7 @@ class MainScene : Scene
 
 		if (m_MFps >= n_fMTimelimit)
 		{
-			if (m_BmFPS != -1)
+			if (m_BmFPS != (int)Time.Limit)
 			{
 				AllManager.Get().MonsterClass(
 				  new AnotherVec2(2, 2),
@@ -102,7 +102,7 @@ class MainScene : Scene
 			AllManager.Get().BossClass(
 			   new AnotherVec2(2, 2),
 			   5f);
-			m_BmFPS = -1;									  //한마리 제한
+			m_BmFPS = (int)Time.Limit;									  //한마리 제한
 
 		}
 
@@ -112,7 +112,7 @@ class MainScene : Scene
 		n_nPosY = 0;
 		m_MFps += a_fDelta;
 
-		if (m_BmFPS != -1)
+		if (m_BmFPS != (int)Time.Limit)
 		{
 			m_BmFPS += a_fDelta;
 		}

@@ -46,6 +46,8 @@ enum Time
 {
     Mlimit = 3,
     Bmlimit = 7,
+
+	Limit=-1,
 }
 enum Make
 {
