@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-public abstract class All
+abstract class All
 {
 	virtual public void Update(float a_fDelta) { }
 	virtual public void Render() { }
