@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Player
+class Player:All
 {
 	private string[] m_sRender1 = new string[6]
 	{
@@ -28,7 +28,7 @@ class Player
 		m_vPos.y = y;
 	}
 
-	public void Render()
+	override public void Render()
 	{
 		if (Util.ConsoleBoundaryCheck(m_vPos) == false)
 		{

@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Bullet
+class Bullet:All
 {
 	private char m_cBRender;
 
@@ -21,7 +21,7 @@ class Bullet
 		m_cBRender = c;
 	}
 
-	public void Update(float a_fDelta)
+	override public void Update(float a_fDelta)
 	{
 		RenderClear();
 
@@ -29,7 +29,7 @@ class Bullet
 		m_vBPos -= (m_vBDir * m_fBSpeed * a_fDelta);
 	}
 
-	public void RenderClear()
+	override public void RenderClear()
 	{
 		if (Util.ConsoleBoundaryCheck(m_vBPos) == false)
 		{
@@ -40,7 +40,7 @@ class Bullet
 		Console.Write(' ');
 	}
 
-	public void Render()
+	override public void Render()
 	{
 		if (Util.ConsoleBoundaryCheck(m_vBPos) == false)
 		{

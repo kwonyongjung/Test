@@ -1,6 +1,6 @@
 ﻿using System;
 
-class BossBullet
+class BossBullet:All
 {
 	private char m_cBbRender; 
 
@@ -22,7 +22,7 @@ class BossBullet
         m_cBbRender = c;
     }
 
-    public void Update(float a_fDelta)
+    override public void Update(float a_fDelta)
     {
         RenderClear();
 
@@ -30,7 +30,7 @@ class BossBullet
         m_vBbPos += (m_vBbDir * m_fBbSpeed * a_fDelta);
     }
 
-    public void RenderClear()
+	override public void RenderClear()
     {
         if (Util.ConsoleBoundaryCheck(m_vBbPos) == false) { return; }
 
@@ -38,7 +38,7 @@ class BossBullet
         Console.Write(' ');
     }
 
-    public void Render()
+	override public void Render()
     {     
         if (Util.ConsoleBoundaryCheck(m_vBbPos) == false) { return; }
 

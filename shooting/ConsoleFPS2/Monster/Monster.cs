@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Monster
+class Monster:All
 {
     private string[] m_sMRender1 = new string[2]
     {
@@ -43,7 +43,7 @@ class Monster
         m_fMSpeed = speed;
     }
 
-    public void Update(float a_fDelta)
+	override public void Update(float a_fDelta)
     {
         RenderClear();
 
@@ -51,7 +51,7 @@ class Monster
         m_vMPos += (m_vMDir * m_fMSpeed * a_fDelta);
     }
 
-    public void RenderClear()
+	override public void RenderClear()
     {
         if (Util.ConsoleBoundaryCheck(m_vMPos) == false)
         {
@@ -65,7 +65,7 @@ class Monster
         }
     }
 
-    public void Render()
+	override public void Render()
     {
         if (Util.ConsoleBoundaryCheck(m_vMPos) == false)
         {

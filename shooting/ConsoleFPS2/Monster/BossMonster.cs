@@ -1,6 +1,6 @@
 ﻿using System;
 
-class BossMonster
+class BossMonster:All
 {
 	private string[] m_sBmRender = new string[10]
     {
@@ -46,7 +46,7 @@ class BossMonster
 		m_fBmSpeed = speed;
 	}
 
-	public void Update(float a_fDelta)
+	override public void Update(float a_fDelta)
 	{
 		RenderClear();
 
@@ -59,7 +59,7 @@ class BossMonster
 		}
 	}
 
-	public void RenderClear()
+	override public void RenderClear()
 	{
 		if (Util.ConsoleBoundaryCheck(m_vBmPos) == false)
 		{
@@ -73,7 +73,7 @@ class BossMonster
 		}
 	}
 
-	public void Render()
+	override public void Render()
 	{
 		if (Util.ConsoleBoundaryCheck(m_vBmPos) == false)
 		{

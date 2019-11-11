@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Bullet\BossBullet.cs" />
     <Compile Include="Bullet\Bullet.cs" />
+    <Compile Include="All.cs" />
     <Compile Include="Manager\AllManager.cs" />
     <Compile Include="ExtensionMethod.cs" />
     <Compile Include="Scene\PlayerScene.cs" />
