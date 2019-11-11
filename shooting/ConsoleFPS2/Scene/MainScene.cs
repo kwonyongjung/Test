@@ -73,6 +73,7 @@ class MainScene : Scene
 					break;
 			}
 		}
+
 		//생성 속도를 0.MTimelimit마다 생성하게 함
 		n_fMTimelimit = (int)Time.Mlimit * (float)0.1;
 
