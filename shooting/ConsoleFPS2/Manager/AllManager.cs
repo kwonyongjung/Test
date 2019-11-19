@@ -10,7 +10,7 @@ using System.Collections.Generic;
 class AllManager
 {
 	public int m_nScore = 0;				//스코어
-	public int BmLife = 150;				//보스 라이프
+	public int BmLife = 20;				//보스 라이프
 
 	private float m_fPlayerX;
 	private float m_fPlayerY;
