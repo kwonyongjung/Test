@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-			System.Windows.Forms.PictureBox KogMaw;
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
 			this.Malzahar = new System.Windows.Forms.PictureBox();
 			this.Zyra = new System.Windows.Forms.PictureBox();
 			this.Annie = new System.Windows.Forms.PictureBox();
-			this.pictureBox1_2 = new System.Windows.Forms.PictureBox();
+			this.MasterYi_2 = new System.Windows.Forms.PictureBox();
 			this.Nami = new System.Windows.Forms.PictureBox();
 			this.Janna = new System.Windows.Forms.PictureBox();
 			this.Soraka = new System.Windows.Forms.PictureBox();
@@ -84,7 +84,7 @@
 			this.Yasuo = new System.Windows.Forms.PictureBox();
 			this.Aatrox = new System.Windows.Forms.PictureBox();
 			this.Sivir = new System.Windows.Forms.PictureBox();
-			this.label5 = new System.Windows.Forms.Label();
+			this.SwordMan = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
@@ -96,8 +96,10 @@
 			this.label14 = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
 			this.label16 = new System.Windows.Forms.Label();
-			KogMaw = new System.Windows.Forms.PictureBox();
-			((System.ComponentModel.ISupportInitialize)(KogMaw)).BeginInit();
+			this.KogMaw = new System.Windows.Forms.PictureBox();
+			this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+			this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+			this.SynergyBox = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.Olaf)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Sion)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Jax)).BeginInit();
@@ -113,7 +115,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.Malzahar)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Zyra)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Annie)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1_2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.MasterYi_2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Nami)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Janna)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Soraka)).BeginInit();
@@ -150,17 +152,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.Yasuo)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Aatrox)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Sivir)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.KogMaw)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// KogMaw
-			// 
-			KogMaw.Image = ((System.Drawing.Image)(resources.GetObject("KogMaw.Image")));
-			KogMaw.Location = new System.Drawing.Point(320, 372);
-			KogMaw.Name = "KogMaw";
-			KogMaw.Size = new System.Drawing.Size(31, 35);
-			KogMaw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			KogMaw.TabIndex = 9;
-			KogMaw.TabStop = false;
 			// 
 			// label1
 			// 
@@ -289,6 +282,7 @@
 			this.Zed_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Zed_1.TabIndex = 10;
 			this.Zed_1.TabStop = false;
+			this.Zed_1.Click += new System.EventHandler(this.Zed_1_Click);
 			// 
 			// Yorick
 			// 
@@ -299,6 +293,7 @@
 			this.Yorick.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Yorick.TabIndex = 9;
 			this.Yorick.TabStop = false;
+			this.Yorick.Click += new System.EventHandler(this.Yorick_Click);
 			// 
 			// Azir
 			// 
@@ -342,46 +337,51 @@
 			this.Annie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Annie.TabIndex = 6;
 			this.Annie.TabStop = false;
+			this.Annie.Click += new System.EventHandler(this.Annie_Click);
 			// 
-			// pictureBox1_2
+			// MasterYi_2
 			// 
-			this.pictureBox1_2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1_2.Image")));
-			this.pictureBox1_2.Location = new System.Drawing.Point(395, 88);
-			this.pictureBox1_2.Name = "pictureBox1_2";
-			this.pictureBox1_2.Size = new System.Drawing.Size(31, 35);
-			this.pictureBox1_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1_2.TabIndex = 9;
-			this.pictureBox1_2.TabStop = false;
+			this.MasterYi_2.Image = ((System.Drawing.Image)(resources.GetObject("MasterYi_2.Image")));
+			this.MasterYi_2.Location = new System.Drawing.Point(395, 88);
+			this.MasterYi_2.Name = "MasterYi_2";
+			this.MasterYi_2.Size = new System.Drawing.Size(31, 35);
+			this.MasterYi_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.MasterYi_2.TabIndex = 9;
+			this.MasterYi_2.TabStop = false;
+			this.MasterYi_2.Click += new System.EventHandler(this.MasterYi_2_Click);
 			// 
 			// Nami
 			// 
 			this.Nami.Image = ((System.Drawing.Image)(resources.GetObject("Nami.Image")));
-			this.Nami.Location = new System.Drawing.Point(355, 89);
+			this.Nami.Location = new System.Drawing.Point(355, 88);
 			this.Nami.Name = "Nami";
 			this.Nami.Size = new System.Drawing.Size(31, 35);
 			this.Nami.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Nami.TabIndex = 5;
 			this.Nami.TabStop = false;
+			this.Nami.Click += new System.EventHandler(this.Nami_Click);
 			// 
 			// Janna
 			// 
 			this.Janna.Image = ((System.Drawing.Image)(resources.GetObject("Janna.Image")));
-			this.Janna.Location = new System.Drawing.Point(318, 89);
+			this.Janna.Location = new System.Drawing.Point(318, 88);
 			this.Janna.Name = "Janna";
 			this.Janna.Size = new System.Drawing.Size(31, 35);
 			this.Janna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Janna.TabIndex = 8;
 			this.Janna.TabStop = false;
+			this.Janna.Click += new System.EventHandler(this.Janna_Click);
 			// 
 			// Soraka
 			// 
 			this.Soraka.Image = ((System.Drawing.Image)(resources.GetObject("Soraka.Image")));
-			this.Soraka.Location = new System.Drawing.Point(281, 89);
+			this.Soraka.Location = new System.Drawing.Point(281, 88);
 			this.Soraka.Name = "Soraka";
 			this.Soraka.Size = new System.Drawing.Size(31, 35);
 			this.Soraka.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Soraka.TabIndex = 7;
 			this.Soraka.TabStop = false;
+			this.Soraka.Click += new System.EventHandler(this.Soraka_Click);
 			// 
 			// Lux
 			// 
@@ -392,6 +392,7 @@
 			this.Lux.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Lux.TabIndex = 5;
 			this.Lux.TabStop = false;
+			this.Lux.Click += new System.EventHandler(this.Lux_Click);
 			// 
 			// Zed_2
 			// 
@@ -402,6 +403,7 @@
 			this.Zed_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Zed_2.TabIndex = 10;
 			this.Zed_2.TabStop = false;
+			this.Zed_2.Click += new System.EventHandler(this.Zed_2_Click);
 			// 
 			// Khazix
 			// 
@@ -412,6 +414,7 @@
 			this.Khazix.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Khazix.TabIndex = 9;
 			this.Khazix.TabStop = false;
+			this.Khazix.Click += new System.EventHandler(this.Khazix_Click);
 			// 
 			// Nocturne
 			// 
@@ -422,6 +425,7 @@
 			this.Nocturne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Nocturne.TabIndex = 5;
 			this.Nocturne.TabStop = false;
+			this.Nocturne.Click += new System.EventHandler(this.Nocturne_Click);
 			// 
 			// LeBlanc_1
 			// 
@@ -432,6 +436,7 @@
 			this.LeBlanc_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.LeBlanc_1.TabIndex = 8;
 			this.LeBlanc_1.TabStop = false;
+			this.LeBlanc_1.Click += new System.EventHandler(this.LeBlanc_1_Click);
 			// 
 			// Diana
 			// 
@@ -442,6 +447,7 @@
 			this.Diana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Diana.TabIndex = 7;
 			this.Diana.TabStop = false;
+			this.Diana.Click += new System.EventHandler(this.Diana_Click);
 			// 
 			// Qiyana
 			// 
@@ -452,6 +458,7 @@
 			this.Qiyana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Qiyana.TabIndex = 6;
 			this.Qiyana.TabStop = false;
+			this.Qiyana.Click += new System.EventHandler(this.Qiyana_Click);
 			// 
 			// Singed
 			// 
@@ -462,6 +469,7 @@
 			this.Singed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Singed.TabIndex = 5;
 			this.Singed.TabStop = false;
+			this.Singed.Click += new System.EventHandler(this.Singed_Click);
 			// 
 			// LeBlanc_2
 			// 
@@ -472,6 +480,7 @@
 			this.LeBlanc_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.LeBlanc_2.TabIndex = 11;
 			this.LeBlanc_2.TabStop = false;
+			this.LeBlanc_2.Click += new System.EventHandler(this.LeBlanc_2_Click);
 			// 
 			// Veigar
 			// 
@@ -482,6 +491,7 @@
 			this.Veigar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Veigar.TabIndex = 10;
 			this.Veigar.TabStop = false;
+			this.Veigar.Click += new System.EventHandler(this.Veigar_Click);
 			// 
 			// Brand
 			// 
@@ -492,6 +502,7 @@
 			this.Brand.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Brand.TabIndex = 9;
 			this.Brand.TabStop = false;
+			this.Brand.Click += new System.EventHandler(this.Brand_Click);
 			// 
 			// Taliyah
 			// 
@@ -502,6 +513,7 @@
 			this.Taliyah.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Taliyah.TabIndex = 5;
 			this.Taliyah.TabStop = false;
+			this.Taliyah.Click += new System.EventHandler(this.Taliyah_Click);
 			// 
 			// Vladimir
 			// 
@@ -512,6 +524,7 @@
 			this.Vladimir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Vladimir.TabIndex = 7;
 			this.Vladimir.TabStop = false;
+			this.Vladimir.Click += new System.EventHandler(this.Vladimir_Click);
 			// 
 			// Syndra
 			// 
@@ -522,6 +535,7 @@
 			this.Syndra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Syndra.TabIndex = 6;
 			this.Syndra.TabStop = false;
+			this.Syndra.Click += new System.EventHandler(this.Syndra_Click);
 			// 
 			// Twitch
 			// 
@@ -532,6 +546,7 @@
 			this.Twitch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Twitch.TabIndex = 10;
 			this.Twitch.TabStop = false;
+			this.Twitch.Click += new System.EventHandler(this.Twitch_Click);
 			// 
 			// Ashe
 			// 
@@ -542,6 +557,7 @@
 			this.Ashe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Ashe.TabIndex = 9;
 			this.Ashe.TabStop = false;
+			this.Ashe.Click += new System.EventHandler(this.Ashe_Click);
 			// 
 			// Ezreal
 			// 
@@ -552,6 +568,7 @@
 			this.Ezreal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Ezreal.TabIndex = 5;
 			this.Ezreal.TabStop = false;
+			this.Ezreal.Click += new System.EventHandler(this.Ezreal_Click);
 			// 
 			// Varus
 			// 
@@ -562,6 +579,7 @@
 			this.Varus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Varus.TabIndex = 8;
 			this.Varus.TabStop = false;
+			this.Varus.Click += new System.EventHandler(this.Varus_Click);
 			// 
 			// Vayne
 			// 
@@ -572,6 +590,7 @@
 			this.Vayne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Vayne.TabIndex = 7;
 			this.Vayne.TabStop = false;
+			this.Vayne.Click += new System.EventHandler(this.Vayne_Click);
 			// 
 			// Kindred
 			// 
@@ -582,6 +601,7 @@
 			this.Kindred.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Kindred.TabIndex = 6;
 			this.Kindred.TabStop = false;
+			this.Kindred.Click += new System.EventHandler(this.Kindred_Click);
 			// 
 			// Nautilus
 			// 
@@ -592,6 +612,7 @@
 			this.Nautilus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Nautilus.TabIndex = 11;
 			this.Nautilus.TabStop = false;
+			this.Nautilus.Click += new System.EventHandler(this.Nautilus_Click);
 			// 
 			// Malphite
 			// 
@@ -602,6 +623,7 @@
 			this.Malphite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Malphite.TabIndex = 9;
 			this.Malphite.TabStop = false;
+			this.Malphite.Click += new System.EventHandler(this.Malphite_Click);
 			// 
 			// Braum
 			// 
@@ -612,6 +634,7 @@
 			this.Braum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Braum.TabIndex = 5;
 			this.Braum.TabStop = false;
+			this.Braum.Click += new System.EventHandler(this.Braum_Click);
 			// 
 			// Ornn
 			// 
@@ -622,6 +645,7 @@
 			this.Ornn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Ornn.TabIndex = 8;
 			this.Ornn.TabStop = false;
+			this.Ornn.Click += new System.EventHandler(this.Ornn_Click);
 			// 
 			// Nasus
 			// 
@@ -632,6 +656,7 @@
 			this.Nasus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Nasus.TabIndex = 7;
 			this.Nasus.TabStop = false;
+			this.Nasus.Click += new System.EventHandler(this.Nasus_Click);
 			// 
 			// Thresh
 			// 
@@ -642,6 +667,7 @@
 			this.Thresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Thresh.TabIndex = 6;
 			this.Thresh.TabStop = false;
+			this.Thresh.Click += new System.EventHandler(this.Thresh_Click);
 			// 
 			// Skarner
 			// 
@@ -652,6 +678,7 @@
 			this.Skarner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Skarner.TabIndex = 5;
 			this.Skarner.TabStop = false;
+			this.Skarner.Click += new System.EventHandler(this.Skarner_Click);
 			// 
 			// RekSai
 			// 
@@ -662,6 +689,7 @@
 			this.RekSai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.RekSai.TabIndex = 8;
 			this.RekSai.TabStop = false;
+			this.RekSai.Click += new System.EventHandler(this.RekSai_Click);
 			// 
 			// Warwick
 			// 
@@ -672,6 +700,7 @@
 			this.Warwick.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.Warwick.TabIndex = 7;
 			this.Warwick.TabStop = false;
+			this.Warwick.Click += new System.EventHandler(this.Warwick_Click);
 			// 
 			// MasterYi_1
 			// 
@@ -717,15 +746,16 @@
 			this.Sivir.TabStop = false;
 			this.Sivir.Click += new System.EventHandler(this.Sivir_Click);
 			// 
-			// label5
+			// SwordMan
 			// 
-			this.label5.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-			this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.label5.Location = new System.Drawing.Point(26, 61);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(52, 27);
-			this.label5.TabIndex = 16;
-			this.label5.Text = "검사";
+			this.SwordMan.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.SwordMan.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.SwordMan.Location = new System.Drawing.Point(26, 61);
+			this.SwordMan.Name = "SwordMan";
+			this.SwordMan.Size = new System.Drawing.Size(52, 27);
+			this.SwordMan.TabIndex = 16;
+			this.SwordMan.Text = "검사";
+			this.SwordMan.MouseHover += new System.EventHandler(this.SwordMan_MouseHover_1);
 			// 
 			// label6
 			// 
@@ -837,12 +867,40 @@
 			this.label16.TabIndex = 27;
 			this.label16.Text = "파수꾼";
 			// 
+			// KogMaw
+			// 
+			this.KogMaw.Image = ((System.Drawing.Image)(resources.GetObject("KogMaw.Image")));
+			this.KogMaw.Location = new System.Drawing.Point(320, 372);
+			this.KogMaw.Name = "KogMaw";
+			this.KogMaw.Size = new System.Drawing.Size(31, 35);
+			this.KogMaw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.KogMaw.TabIndex = 28;
+			this.KogMaw.TabStop = false;
+			this.KogMaw.Click += new System.EventHandler(this.KogMaw_Click);
+			// 
+			// imageList1
+			// 
+			this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+			this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+			this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+			// 
+			// SynergyBox
+			// 
+			this.SynergyBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.SynergyBox.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.SynergyBox.Location = new System.Drawing.Point(1167, 174);
+			this.SynergyBox.Name = "SynergyBox";
+			this.SynergyBox.Size = new System.Drawing.Size(329, 369);
+			this.SynergyBox.TabIndex = 29;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
 			this.ClientSize = new System.Drawing.Size(1621, 724);
+			this.Controls.Add(this.SynergyBox);
+			this.Controls.Add(this.KogMaw);
 			this.Controls.Add(this.label16);
 			this.Controls.Add(this.Nautilus);
 			this.Controls.Add(this.Twitch);
@@ -851,7 +909,6 @@
 			this.Controls.Add(this.Ashe);
 			this.Controls.Add(this.Braum);
 			this.Controls.Add(this.Ornn);
-			this.Controls.Add(KogMaw);
 			this.Controls.Add(this.Nasus);
 			this.Controls.Add(this.Ezreal);
 			this.Controls.Add(this.Thresh);
@@ -872,7 +929,7 @@
 			this.Controls.Add(this.label11);
 			this.Controls.Add(this.Diana);
 			this.Controls.Add(this.Qiyana);
-			this.Controls.Add(this.pictureBox1_2);
+			this.Controls.Add(this.MasterYi_2);
 			this.Controls.Add(this.label10);
 			this.Controls.Add(this.Nami);
 			this.Controls.Add(this.Singed);
@@ -898,7 +955,7 @@
 			this.Controls.Add(this.Annie);
 			this.Controls.Add(this.Olaf);
 			this.Controls.Add(this.Ivern);
-			this.Controls.Add(this.label5);
+			this.Controls.Add(this.SwordMan);
 			this.Controls.Add(this.Sion);
 			this.Controls.Add(this.Jax);
 			this.Controls.Add(this.Sivir);
@@ -913,7 +970,6 @@
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(KogMaw)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Olaf)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Sion)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Jax)).EndInit();
@@ -929,7 +985,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.Malzahar)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Zyra)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Annie)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1_2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.MasterYi_2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Nami)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Janna)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Soraka)).EndInit();
@@ -966,6 +1022,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.Yasuo)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Aatrox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Sivir)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.KogMaw)).EndInit();
 			this.ResumeLayout(false);
 
         }
@@ -989,7 +1046,7 @@
         private System.Windows.Forms.PictureBox Malzahar;
         private System.Windows.Forms.PictureBox Zyra;
         private System.Windows.Forms.PictureBox Annie;
-        private System.Windows.Forms.PictureBox pictureBox1_2;
+        private System.Windows.Forms.PictureBox MasterYi_2;
         private System.Windows.Forms.PictureBox Nami;
         private System.Windows.Forms.PictureBox Janna;
         private System.Windows.Forms.PictureBox Soraka;
@@ -1026,7 +1083,7 @@
 		private System.Windows.Forms.PictureBox Yasuo;
 		private System.Windows.Forms.PictureBox Aatrox;
 		private System.Windows.Forms.PictureBox Sivir;
-		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label SwordMan;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label8;
@@ -1038,6 +1095,10 @@
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label label16;
+		private System.Windows.Forms.PictureBox KogMaw;
+		private System.Windows.Forms.HelpProvider helpProvider1;
+		private System.Windows.Forms.ImageList imageList1;
+		private System.Windows.Forms.Label SynergyBox;
 	}
 }
 
