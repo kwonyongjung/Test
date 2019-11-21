@@ -30,7 +30,6 @@
         {
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.Olaf = new System.Windows.Forms.PictureBox();
 			this.Sion = new System.Windows.Forms.PictureBox();
@@ -99,7 +98,18 @@
 			this.KogMaw = new System.Windows.Forms.PictureBox();
 			this.helpProvider1 = new System.Windows.Forms.HelpProvider();
 			this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-			this.SynergyBox = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.SynergyNameBox = new System.Windows.Forms.Label();
+			this.SwrodLabel = new System.Windows.Forms.Label();
+			this.WarriorLabel = new System.Windows.Forms.Label();
+			this.PlantLabel = new System.Windows.Forms.Label();
+			this.SummonerLabel = new System.Windows.Forms.Label();
+			this.MagicianLabel = new System.Windows.Forms.Label();
+			this.AlchemyLabel = new System.Windows.Forms.Label();
+			this.MysteryLabel = new System.Windows.Forms.Label();
+			this.AvatarLabel = new System.Windows.Forms.Label();
+			this.AssassinLabel = new System.Windows.Forms.Label();
+			this.GluttonyLabel = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.Olaf)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Sion)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Jax)).BeginInit();
@@ -154,14 +164,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.Sivir)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.KogMaw)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// label1
-			// 
-			this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label1.Location = new System.Drawing.Point(1115, 80);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(423, 52);
-			this.label1.TabIndex = 0;
 			// 
 			// label2
 			// 
@@ -884,14 +886,141 @@
 			this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
 			this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
 			// 
-			// SynergyBox
+			// label3
 			// 
-			this.SynergyBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
-			this.SynergyBox.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-			this.SynergyBox.Location = new System.Drawing.Point(1167, 174);
-			this.SynergyBox.Name = "SynergyBox";
-			this.SynergyBox.Size = new System.Drawing.Size(329, 369);
-			this.SynergyBox.TabIndex = 29;
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(190, 99);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(38, 12);
+			this.label3.TabIndex = 30;
+			this.label3.Text = "label3";
+			// 
+			// SynergyNameBox
+			// 
+			this.SynergyNameBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.SynergyNameBox.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.SynergyNameBox.Location = new System.Drawing.Point(967, 61);
+			this.SynergyNameBox.Name = "SynergyNameBox";
+			this.SynergyNameBox.Size = new System.Drawing.Size(555, 473);
+			this.SynergyNameBox.TabIndex = 31;
+			// 
+			// SwrodLabel
+			// 
+			this.SwrodLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.SwrodLabel.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.SwrodLabel.Location = new System.Drawing.Point(541, 25);
+			this.SwrodLabel.Name = "SwrodLabel";
+			this.SwrodLabel.Size = new System.Drawing.Size(331, 63);
+			this.SwrodLabel.TabIndex = 32;
+			this.SwrodLabel.Visible = false;
+			// 
+			// WarriorLabel
+			// 
+			this.WarriorLabel.AutoSize = true;
+			this.WarriorLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.WarriorLabel.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.WarriorLabel.Location = new System.Drawing.Point(552, 93);
+			this.WarriorLabel.Name = "WarriorLabel";
+			this.WarriorLabel.Size = new System.Drawing.Size(16, 19);
+			this.WarriorLabel.TabIndex = 33;
+			this.WarriorLabel.Text = " ";
+			this.WarriorLabel.Visible = false;
+			// 
+			// PlantLabel
+			// 
+			this.PlantLabel.AutoSize = true;
+			this.PlantLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.PlantLabel.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.PlantLabel.Location = new System.Drawing.Point(552, 116);
+			this.PlantLabel.Name = "PlantLabel";
+			this.PlantLabel.Size = new System.Drawing.Size(16, 19);
+			this.PlantLabel.TabIndex = 34;
+			this.PlantLabel.Text = " ";
+			this.PlantLabel.Visible = false;
+			// 
+			// SummonerLabel
+			// 
+			this.SummonerLabel.AutoSize = true;
+			this.SummonerLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.SummonerLabel.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.SummonerLabel.Location = new System.Drawing.Point(552, 140);
+			this.SummonerLabel.Name = "SummonerLabel";
+			this.SummonerLabel.Size = new System.Drawing.Size(16, 19);
+			this.SummonerLabel.TabIndex = 35;
+			this.SummonerLabel.Text = " ";
+			this.SummonerLabel.Visible = false;
+			// 
+			// MagicianLabel
+			// 
+			this.MagicianLabel.AutoSize = true;
+			this.MagicianLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.MagicianLabel.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.MagicianLabel.Location = new System.Drawing.Point(552, 174);
+			this.MagicianLabel.Name = "MagicianLabel";
+			this.MagicianLabel.Size = new System.Drawing.Size(16, 19);
+			this.MagicianLabel.TabIndex = 36;
+			this.MagicianLabel.Text = " ";
+			this.MagicianLabel.Visible = false;
+			// 
+			// AlchemyLabel
+			// 
+			this.AlchemyLabel.AutoSize = true;
+			this.AlchemyLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.AlchemyLabel.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.AlchemyLabel.Location = new System.Drawing.Point(552, 210);
+			this.AlchemyLabel.Name = "AlchemyLabel";
+			this.AlchemyLabel.Size = new System.Drawing.Size(16, 19);
+			this.AlchemyLabel.TabIndex = 37;
+			this.AlchemyLabel.Text = " ";
+			this.AlchemyLabel.Visible = false;
+			// 
+			// MysteryLabel
+			// 
+			this.MysteryLabel.AutoSize = true;
+			this.MysteryLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.MysteryLabel.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.MysteryLabel.Location = new System.Drawing.Point(552, 246);
+			this.MysteryLabel.Name = "MysteryLabel";
+			this.MysteryLabel.Size = new System.Drawing.Size(16, 19);
+			this.MysteryLabel.TabIndex = 38;
+			this.MysteryLabel.Text = " ";
+			this.MysteryLabel.Visible = false;
+			// 
+			// AvatarLabel
+			// 
+			this.AvatarLabel.AutoSize = true;
+			this.AvatarLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.AvatarLabel.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.AvatarLabel.Location = new System.Drawing.Point(552, 288);
+			this.AvatarLabel.Name = "AvatarLabel";
+			this.AvatarLabel.Size = new System.Drawing.Size(16, 19);
+			this.AvatarLabel.TabIndex = 39;
+			this.AvatarLabel.Text = " ";
+			this.AvatarLabel.Visible = false;
+			// 
+			// AssassinLabel
+			// 
+			this.AssassinLabel.AutoSize = true;
+			this.AssassinLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.AssassinLabel.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.AssassinLabel.Location = new System.Drawing.Point(552, 323);
+			this.AssassinLabel.Name = "AssassinLabel";
+			this.AssassinLabel.Size = new System.Drawing.Size(16, 19);
+			this.AssassinLabel.TabIndex = 40;
+			this.AssassinLabel.Text = " ";
+			this.AssassinLabel.Visible = false;
+			// 
+			// GluttonyLabel
+			// 
+			this.GluttonyLabel.AutoSize = true;
+			this.GluttonyLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.GluttonyLabel.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+			this.GluttonyLabel.Location = new System.Drawing.Point(552, 349);
+			this.GluttonyLabel.Name = "GluttonyLabel";
+			this.GluttonyLabel.Size = new System.Drawing.Size(16, 19);
+			this.GluttonyLabel.TabIndex = 41;
+			this.GluttonyLabel.Text = " ";
+			this.GluttonyLabel.Visible = false;
 			// 
 			// Form1
 			// 
@@ -899,7 +1028,17 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
 			this.ClientSize = new System.Drawing.Size(1621, 724);
-			this.Controls.Add(this.SynergyBox);
+			this.Controls.Add(this.GluttonyLabel);
+			this.Controls.Add(this.AssassinLabel);
+			this.Controls.Add(this.AvatarLabel);
+			this.Controls.Add(this.MysteryLabel);
+			this.Controls.Add(this.AlchemyLabel);
+			this.Controls.Add(this.MagicianLabel);
+			this.Controls.Add(this.SummonerLabel);
+			this.Controls.Add(this.PlantLabel);
+			this.Controls.Add(this.WarriorLabel);
+			this.Controls.Add(this.SwrodLabel);
+			this.Controls.Add(this.label3);
 			this.Controls.Add(this.KogMaw);
 			this.Controls.Add(this.label16);
 			this.Controls.Add(this.Nautilus);
@@ -966,7 +1105,7 @@
 			this.Controls.Add(this.Yasuo);
 			this.Controls.Add(this.MasterYi_1);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
+			this.Controls.Add(this.SynergyNameBox);
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.Load += new System.EventHandler(this.Form1_Load);
@@ -1024,12 +1163,11 @@
 			((System.ComponentModel.ISupportInitialize)(this.Sivir)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.KogMaw)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox Jax;
         private System.Windows.Forms.PictureBox Volibear;
@@ -1098,7 +1236,18 @@
 		private System.Windows.Forms.PictureBox KogMaw;
 		private System.Windows.Forms.HelpProvider helpProvider1;
 		private System.Windows.Forms.ImageList imageList1;
-		private System.Windows.Forms.Label SynergyBox;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label SynergyNameBox;
+		private System.Windows.Forms.Label SwrodLabel;
+		private System.Windows.Forms.Label WarriorLabel;
+		private System.Windows.Forms.Label PlantLabel;
+		private System.Windows.Forms.Label SummonerLabel;
+		private System.Windows.Forms.Label MagicianLabel;
+		private System.Windows.Forms.Label AlchemyLabel;
+		private System.Windows.Forms.Label MysteryLabel;
+		private System.Windows.Forms.Label AvatarLabel;
+		private System.Windows.Forms.Label AssassinLabel;
+		private System.Windows.Forms.Label GluttonyLabel;
 	}
 }
 
