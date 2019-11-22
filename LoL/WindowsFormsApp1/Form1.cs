@@ -1587,7 +1587,7 @@ namespace WindowsFormsApp1
 				pictureBox9.Visible = true;
 				pictureBox62.Visible = true;
 			}
-		}
+		} 
 		private void pictureBox33_Click(object sender, EventArgs e)
 		{
 			FourRuning(pictureBox33, 32, 159,833, chamQiyana);
